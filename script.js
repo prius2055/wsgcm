@@ -21,14 +21,14 @@ const projects = [
   },
 ];
 
-const projectCards = document.querySelector('.work-cards');
+const projectCards = document.querySelector('.message-cards');
 const modalContainer = document.querySelector('.modal-container');
 
 projects.forEach((project, i) => {
   const div = document.createElement('div');
-  div.className = 'work-card';
+  div.className = 'message-card';
   div.innerHTML = `  <a href="${project.liveDemo}" target="_blank">
-   <img src='${project.image}' alt='project image' class='work-img id='work-img/>
+   <img src='${project.image}' alt='project image' class='message-img id='message-img/>
     <p>${project.name}</p>
    </a>
           `;
@@ -36,9 +36,9 @@ projects.forEach((project, i) => {
 });
 
 //Handle scroll animation
-const workCards = document.querySelectorAll('.work-card');
-const workImages = document.querySelectorAll('.work-img');
-const workNotes = document.querySelectorAll('.work-notes');
+const messageCards = document.querySelectorAll('.message-card');
+const messageImages = document.querySelectorAll('.message-img');
+const messageNotes = document.querySelectorAll('.message-notes');
 
 const aboutParagraphs = document.querySelector('.about-paragraphs');
 
@@ -61,7 +61,7 @@ const objectOutOfView = (card) => {
 };
 
 const handleScrollAnimation = () => {
-  workImages.forEach((image) => {
+  messageImages.forEach((image) => {
     if (objectInView(image, 65)) {
       image.classList.add('scrolled');
     } else if (objectOutOfView(image)) {
@@ -69,7 +69,7 @@ const handleScrollAnimation = () => {
     }
   });
 
-  workNotes.forEach((note) => {
+  messageNotes.forEach((note) => {
     if (objectInView(note, 65)) {
       note.classList.add('scrolled');
     } else if (objectOutOfView(note)) {
@@ -77,11 +77,11 @@ const handleScrollAnimation = () => {
     }
   });
 
-  workCards.forEach((work) => {
-    if (objectInView(work, 65)) {
-      work.classList.add('scrolled');
-    } else if (objectOutOfView(work)) {
-      work.classList.remove('scrolled');
+  messageCards.forEach((message) => {
+    if (objectInView(message, 65)) {
+      message.classList.add('scrolled');
+    } else if (objectOutOfView(message)) {
+      message.classList.remove('scrolled');
     }
   });
 
