@@ -142,9 +142,8 @@ body {
 #hero-section {
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(0, 0, 0, 0.85) 50%,
-      rgba(0, 168, 90, 0.85) 75%,
+      rgba(0, 0, 0, 0.95),
+      70%,
       rgba(0, 168, 90, 0.8) 100%
     ),
     url('./img/hero-bg-6.jpg');
