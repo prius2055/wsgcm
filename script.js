@@ -29,7 +29,7 @@ projects.forEach((project, i) => {
   div.className = 'work-card';
   div.innerHTML = `  <a href="${project.liveDemo}" target="_blank">
    <img src='${project.image}' alt='project image' class='work-img id='work-img/>
-    <h4>${project.name}</h4>
+    <p>${project.name}</p>
    </a>
           `;
   projectCards.appendChild(div);
