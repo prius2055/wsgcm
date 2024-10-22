@@ -22,7 +22,7 @@ const projects = [
 ];
 
 const projectCards = document.querySelector('.message-cards');
-const modalContainer = document.querySelector('.modal-container');
+
 
 projects.forEach((project, i) => {
   const div = document.createElement('div');
@@ -104,59 +104,7 @@ window.addEventListener('scroll', () => {
   handleScrollAnimation();
 });
 
-/* The modal */
-const projectButtons = document.querySelectorAll('.btn-orange');
-const modalOverlay = document.querySelector('.overlay');
 
-projectButtons.forEach((btn, j) => {
-  btn.addEventListener('click', (e) => {
-    projects.forEach((project, i) => {
-      if (j === i) {
-        const modal = ` <div class='modal'>
-        <div class='modal-heading'>
-          <h2>${project.name}</h2>
-          <img src='./img/xmark.svg' alt='cancel image' class='modal-close' />
-        </div>
-        <ul class='modal-list'>
-          <li>${project.technology[0]}</li>
-          <li>${project.technology[1]}</li>
-          <li>${project.technology[2]}</li>
-          <li>${project.technology[3]}</li>
-        </ul>
-        <div class='modal-detail'><img src='${project.image}' alt='modal hero image' />
-          <div class='modal-message'>
-           <p>
-            ${project.description}
-           </p>
-           <div class='modal-buttons'>
-           <a href ='${project.liveDemo}' target = '_blank' class='btn-modal'>
-           <span>See Live</span
-           ><img src='${project.liveVersion}' alt='share button' />
-           </a>
-           <a href ='${project.sourceCode}' target = '_blank' class='btn-modal'>
-           <span>See Source</span
-           ><img src='${project.source}' alt='share button' />
-           </a>
-          </div>
-        
-        </div>
-        </div>
-       </div>`;
-        modalContainer.innerHTML = modal;
-        document.body.append(modalContainer);
-      }
-    });
-
-    modalContainer.classList.add('active');
-    modalOverlay.classList.add('active');
-
-    const modalClose = document.querySelector('.modal-close');
-    modalClose.addEventListener('click', () => {
-      modalContainer.classList.remove('active');
-      modalOverlay.classList.remove('active');
-    });
-  });
-});
 
 const header = document.querySelector('.header');
 const navBar = document.querySelector('.navBar');

@@ -21,8 +21,6 @@ body {
 }
 
 .header {
-  /* background-color: #222; */
-  /* background-color:  #00a85a; */
   background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: space-between;
@@ -168,86 +166,6 @@ body {
   border-radius: 50%;
 }
 
-/* .typewriter {
-  display: none;
-} */
-
-/* .typewriter-mobile {
-  white-space: nowrap;
-  letter-spacing: 0.08em;
-  text-align: left;
-} */
-
-/* .typewriter-mobile h1 {
-  overflow: hidden;
-  color: rgba(0, 168, 90, 255);
-  font-family: 'Crete Round', sans-serif;
-  font-size: 32px;
-  border-right: 0.1em solid transparent;
-  animation: typing-h1 1.5s steps(30, end) 1s 1 normal both;
-} */
-
-/* .typewriter-mobile h2 {
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  margin-top: 20px;
-  border-right: 0.08em solid transparent;
-  animation: typing-h2 1.5s steps(30, end) 1s 1 normal both,
-    blink-caret-h2 0.5s steps(30, end) infinite;
-} */
-
-/* .typewriter-mobile .h2-a {
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 2.5s;
-} */
-
-/* .typewriter-mobile .h2-b {
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 3.2s;
-} */
-
-/* .typewriter-mobile .h2-c {
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.7s;
-} */
-
-/* The typing effect */
-
-/* @keyframes typing-h1 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-} */
-
-/* @keyframes typing-h2 {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-} */
-
-/* The typewriter cursor effect */
-
-/* @keyframes blink-caret-h2 {
-  0% {
-    border-color: transparent;
-  }
-
-  100% {
-    border-color: transparent;
-  }
-} */
-
 .hero-section-paragraph {
   border-radius: 10px;
   margin: 5% auto;
@@ -301,11 +219,6 @@ body {
   margin-top: 3rem;
 }
 
-/* #about-section img {
-  width: 300px;
-  height: 300px;
-} */
-
 .about-paragraphs {
   margin-bottom: 30px;
   opacity: 0;
@@ -353,31 +266,31 @@ body {
   border-radius: 2rem;
 }
 
+.believe-cta-btn button {
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
 /* MESSAGE SECTION */
 #message-section {
-  padding: 0 5%;
+  padding: 0 10%;
   margin-top: 80px;
 }
 
-#message-section h1 {
-  margin-bottom: 30px;
-  line-height: 52px;
-  font-weight: 600;
+#message-section h2 {
+  margin-bottom: 2rem;
 }
 
 .message-cards {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  line-height: 52px;
-  font-weight: 600;
   margin-bottom: 2%;
 }
 
 .message-card {
-  /* width: 32%; */
-  padding: 3%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   opacity: 0;
   transform: translate3d(20px, -20px, 10px);
   transition: 1s all ease-in-out;
@@ -400,86 +313,6 @@ body {
   border-radius: 1rem;
 }
 
-.message-section-header {
-  margin-bottom: 5%;
-}
-
-.message-section-header h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  /* font-weight: 600; */
-  line-height: 52px;
-}
-
-.list {
-  display: flex;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.btn-orange {
-  background-color: #ff6b00;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  width: 100%;
-}
-
-.btn-orange:hover {
-  letter-spacing: 0.03em;
-  color: #ff6b00;
-  background: #fff5e1;
-  border: 1px solid #ff6b00;
-}
-
-.btn-orange.btn-orange-big {
-  width: 100%;
-  margin: 0;
-}
-
-.message-card h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 2%;
-}
-
-.message-card p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 5%;
-}
-
-.cta {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-}
-
-.cta h2 {
-  margin-bottom: 0;
-}
-
-.cta-grp {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cta img {
-  display: flex;
-  width: 40rem;
-  border-radius: 50%;
-}
 .verses {
   margin-bottom: 1rem;
 }
@@ -498,12 +331,12 @@ body {
 }
 
 #gospel {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   padding: 3% 10%;
 }
 
 .gospel h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .gospel li {
@@ -515,7 +348,6 @@ body {
 #donate {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('./img/donate.jpg');
-  /* background: url('./img/hero-bg-6.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -530,12 +362,12 @@ body {
 }
 
 .donate h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   color: white;
 }
 
 .donate p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
   color: white;
 }
@@ -549,51 +381,6 @@ body {
   font-size: 18px;
   color: white;
   cursor: pointer;
-}
-
-.skills-card {
-  font-family: 'Inter', sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-
-.skills-card-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5%;
-}
-
-.skills-card-header h3 {
-  margin-bottom: 0;
-  font-size: 16px;
-}
-
-.skills-card-header img {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-}
-
-.skills-card-item {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.soft-skills-card-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-card li {
-  list-style-type: square;
-  margin-left: 25px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  text-align: left;
-  font-style: normal;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
 }
 
 #contact-section {
@@ -677,168 +464,25 @@ body {
   width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /* color: #595959; */
   text-align: center;
   border-top: 2px solid #00a85a;
   font-size: 14px;
 }
 
-/* mobile popup goes there */
-
-.modal-container {
-  display: none;
-  position: fixed;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  z-index: 50;
-  overflow-y: scroll;
-}
-
-.modal {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-  position: absolute;
-}
-
-.modal-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-close {
-  width: 5%;
-  height: 5%;
-  cursor: pointer;
-}
-
-.modal h2 {
-  color: #172b4d;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 44px;
-}
-
-.modal-list {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-.modal-list li {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #3c3a39;
-  list-style: none;
-  border: 1px solid #3c3a39;
-  margin-right: 2%;
-  padding: 2%;
-}
-
-.modal-detail img {
-  width: 100%;
-}
-
-.modal p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.modal-buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.modal-buttons a {
-  margin-right: 2%;
-  text-decoration: none;
-}
-
-.btn-modal {
-  display: flex;
-  align-items: center;
-  background: #ff6b00;
-  border: none;
-  padding: 2%;
-  color: #fff;
-}
-
-.btn-modal span {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  margin-right: 1.5%;
-}
-
-.btn-modal img {
-  width: 12%;
-  height: 12%;
-  margin-left: 3%;
-}
-
-.modal button {
-  margin-right: 5%;
-}
-
-.modal-container.active {
-  display: block;
-}
-
-/* Modal */
-
-.overlay {
-  display: none;
-}
-
-.overlay.active {
-  display: block;
-  background-color: rgb(0, 0, 0, 88%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  height: 100%;
-  width: 100%;
-}
-
 @media screen and (min-width: 480px) {
-  .typewriter-mobile h1 {
-    font-size: 44px;
+  #hero-section h1 {
+    font-size: 2rem;
   }
 
-  .typewriter-mobile h2 {
-    font-size: 52px;
+  .hero-section-paragraph {
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 640px) {
-  .typewriter-mobile h1 {
-    font-size: 58px;
+  #hero-section h1 {
+    font-size: 2.5rem;
   }
-
-  .typewriter-mobile h2 {
-    font-size: 68px;
-  }
-
   .hero-section-paragraph {
     font-size: 20px;
   }
@@ -853,14 +497,6 @@ body {
 
   .mobile-nav {
     display: none;
-  }
-
-  header {
-    padding: 0.8% 10%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
   }
 
   .hero-section-icons li {
@@ -894,62 +530,15 @@ body {
     font-weight: 300;
   }
 
-  /* .logo {
-    font-family: 'inter', sans-serif;
-    font-size: 20px;
-    line-height: 20px;
-  } */
-
   .hero-intro {
     width: 100%;
-  }
-
-  .typewriter-mobile {
-    display: none;
   }
 
   #hero-section h1 {
     margin: 2rem auto;
     font-family: 'Crete Round', sans-serif;
-    font-size: 118px;
+    font-size: 3rem;
     text-align: center;
-  }
-
-  /* The typing effect */
-
-  @keyframes typing-h1-desk {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 50%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  @keyframes typing-h2-desk {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 100%;
-    }
-  }
-
-  /* The typewriter cursor effect */
-
-  @keyframes blink-caret-h2-desk {
-    0% {
-      border-color: transparent;
-    }
-
-    100% {
-      border-color: transparent;
-    }
   }
 
   .hero-section-paragraph {
@@ -987,7 +576,6 @@ body {
   /* ABOUT SECTION */
   #about-section {
     padding: 0% 10%;
-    /* color: #222; */
     font-size: 20px;
   }
 
@@ -1008,274 +596,84 @@ body {
     transform: translate3d(0, 0, 0);
   }
 
+  .believes {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px 0,
+      rgba(0, 0, 0, 0.22) 0 15px 12px 0;
+    border-radius: 10px;
+    padding: 2% 4%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .believe {
+    margin-bottom: 0;
+    width: 31%;
+    height: 25rem;
+  }
+
+  .believe p {
+    height: 50%;
+  }
+  .believe img {
+    height: 50%;
+  }
+
+  .believe-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 1rem;
+  }
+
+  .believe-cta img {
+    width: 48%;
+  }
+
+  .verses {
+    width: 48%;
+    height: 45rem;
+  }
+
+  .verse {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .believe-cta-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+    height: 45rem;
+  }
+
+  .believe-cta-btn img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .believe-decision {
+    width: 100%;
+    height: 25%;
+  }
+
+  #gospel {
+    margin-top: 0;
+  }
+
   /* message SECTION */
 
-  #message-section {
-    padding: 0% 10%;
-
-    font-size: 25px;
+  .message-cards {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .message-card {
-    display: flex;
-    padding: 0%;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
+    width: 32%;
+    margin-bottom: 2rem;
   }
-
-  .message-card img {
-    box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px 0, rgba(0, 0, 0, 0.22) 3px 3px 5px 0;
-    /* width: 50%; */
-    height: 50vh;
-    opacity: 0;
-    transform: translate3d(-50px, 0, 0);
-    transition: 1s all ease-in-out;
-  }
-
-  .message-card img.scrolled {
-    opacity: 1;
-    transition-delay: 0.3s;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .message-card .message-notes {
-    width: 40%;
-    opacity: 0;
-    transform: translate3d(50px, 0, 0);
-    transition: 1s all ease-in-out;
-  }
-
-  .message-card .message-notes.scrolled {
-    opacity: 1;
-    transition-delay: 0.3s;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .message-card .btn-orange {
-    width: 100%;
-  }
-
-  .message-card p {
-    font-size: 17px;
-  }
-
-  .message-section-header h1 {
-    width: auto;
-    text-align: start;
-    align-self: center;
-    margin-bottom: 0;
-    margin-right: 2%;
-  }
-
-  .message-section-detail {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 15%;
-    margin-bottom: 3%;
-    height: 550px;
-  }
-
-  .message-section-detail img {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 3%;
-    width: 57%;
-    height: 100%;
-  }
-
-  .message-section-story {
-    width: 30%;
-  }
-
-  .message-section-story h2 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-
-  .message-section-story p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .list {
-    display: flex;
-    margin-bottom: 12px;
-    margin-right: 25%;
-  }
-
-  .list-white {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .list-white li {
-    list-style: none;
-    color: #091e42;
-    background-color: white;
-    font-family: 'Inter', sans-serif;
-    border: 1px solid #8993a4;
-    padding: 2% 4%;
-    margin-right: 2%;
-  }
-
-  .btn-orange {
-    background-color: #ff6b00;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .btn-orange:hover {
-    letter-spacing: 0.03em;
-    color: #f55800;
-    background: #fff5e1;
-    border: 1px solid #f55800;
-  }
-
-  .list-grey li {
-    padding: 2% 4%;
-    margin-right: 2%;
-  }
-
-  .list-grey {
-    padding-bottom: 22px;
-  }
-
-  .btn-orange-big {
-    width: 100%;
-    margin: 0;
-  }
-
-  /* SKILLS SECTION */
-
-  #skills-section {
-    padding: 5% 10%;
-    font-size: 25px;
-    margin-bottom: 0;
-  }
-
-  .tech-skills {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
-    transition: 1s all ease-in-out;
-  }
-
-  .tech-skills.scrolled {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-  #skills-section p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .skills-card-header {
-    margin-bottom: 2%;
-  }
-
-  .skills-card li {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-
-  .skills-header {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 32px;
-    font-weight: 700;
-  }
-
-  .skills-card-header h3 {
-    margin-bottom: 0;
-    font-size: 22px;
-  }
-
-  .skills-card li {
-    font-size: 18px;
-  }
-
-  .skills-header img {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* VOLUNTEER SECTION */
-
-  #volunteer-section {
-    padding: 5% 10%;
-    font-size: 25px;
-    margin-top: -1px;
-  }
-
-  .volunteer-detail-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-  }
-
-  .volunteer-detail {
-    margin-top: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  /* MODAL */
-
-  .modal {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    height: 80vh;
-    padding: 3%;
-  }
-
-  .modal-detail img {
-    height: 500px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px 0, rgba(0, 0, 0, 0.22) 3px 3px 5px 0;
-  }
-
-  .btn-modal img {
-    width: 12%;
-    height: 12%;
-  }
-
-  .modal-list {
-    margin-top: 0.5%;
-    margin-bottom: 1%;
-  }
-
-  .modal-list li {
-    padding: 1% 2%;
-  }
-
-  .modal-detail {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .modal-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-left: 5%;
-    width: 100%;
-  }
-
-  .modal-close {
-    width: 20px;
-    height: 20px;
-  }
-
-  .btn-modal {
-    padding: 2.5% 4%;
-  }
-
   /* CONTACT SECTION */
 
   #contact-section {
@@ -1303,18 +701,23 @@ body {
 /* DESKTOP 2 */
 
 @media screen and (min-width: 960px) {
-  #hero-section {
-    align-items: flex-start;
+  #hero-section h1 {
+    font-size: 4rem;
   }
 
-  .typewriter h1 {
-    font-size: 68px;
+  .verses {
+    height: 38rem;
   }
 
-  .typewriter h2 {
-    font-size: 72px;
+  .believe-cta-btn {
+    height: 38rem;
   }
 
+  .believe-decision {
+    width: 100%;
+    height: 30%;
+  }
+  
   .contact-action-detail {
     font-size: 20px;
     width: 80%;
@@ -1328,15 +731,14 @@ body {
 /* DESKTOP 3 */
 
 @media screen and (min-width: 1200px) {
-  .typewriter h1 {
-    font-size: 88px;
+  #hero-section h1 {
+    font-size: 5rem;
   }
 
-  .typewriter h2 {
-    font-size: 98px;
+  .believe p {
+    height: 30%;
   }
-  .volunteer-detail img {
-    width: 450px;
-    height: 300px;
+  .believe img {
+    height: 68%;
   }
 }
