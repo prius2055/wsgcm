@@ -21,7 +21,9 @@ body {
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.85);
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 3px, rgba(0, 0, 0, 0.1) 0 3px 3px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 1% 10%;
@@ -40,17 +42,26 @@ body {
   width: 100%;
 }
 
+.header a {
+  text-decoration: none;
+  color: #00a85a;
+  font-weight: 400;
+}
+
 .logo.active {
   display: none;
 }
 
 .logo {
+  display: flex;
+  flex-direction: row;
   padding: 0;
 }
 
 .logo img {
   height: 3rem;
   width: 3rem;
+  margin-right: 0.5rem;
 }
 
 .hamburger {
@@ -140,52 +151,54 @@ body {
 #hero-section {
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.85),
       70%,
-      rgba(0, 168, 90, 0.8) 100%
+      rgba(0, 0, 0, 0.8) 100%
     ),
     url('./img/hero-bg-6.jpg');
 
   background-repeat: no-repeat;
   background-size: cover;
-
   justify-content: center;
-  padding: 1% 10%;
+  padding: 4% 10% 1% 10%;
   height: 100vh;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: #ffffffcc;
   text-align: center;
 }
 
-.hero-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+.hero-mandate {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  animation: slideIn 1.5s steps(30, end) 1s 1 normal both;
+  animation-delay: 1s;
 }
 
-.hero-section-paragraph {
-  border-radius: 10px;
-  margin: 5% auto;
-  font-style: italic;
-  line-height: 30px;
+.hero-image {
+  width: 50%;
+  height: 600px;
+  border-radius: 1rem;
   animation: slideIn 1.5s steps(30, end) 1s 1 normal both;
   animation-delay: 1s;
 }
 
 .btn-cta {
   padding: 1.5% 4%;
-  margin-top: 0 auto;
-  border: 2px solid #fff;
+  margin: 2rem auto;
+  border: 2px solid #00a85a;
   cursor: pointer;
   color: white;
+  background-color: #00a85a;
   text-decoration: none;
   text-align: center;
   font-weight: 700;
   animation: slideIn 1.5s steps(30, end) 1s 1 normal both;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 @keyframes slideIn {
@@ -213,7 +226,31 @@ body {
   list-style: none;
 }
 
+.hero-passage p:first-child {
+  border-left: 6px solid rgba(255, 255, 255, 0.5);
+  padding-left: 0.8rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.hero-passage p:last-child {
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.hero-task {
+  text-align: left;
+  border-left: 6px solid rgba(255, 255, 255, 0.5);
+  padding-left: 0.8rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
 /* ABOUT SECTION */
+
 #about-section {
   padding: 0 5%;
   margin-top: 3rem;
@@ -221,15 +258,9 @@ body {
 
 .about-paragraphs {
   margin-bottom: 30px;
-  opacity: 0;
-  transform: translate3d(0, 50px, 0);
-  transition: 1s all ease-in-out;
 }
 
 .about-paragraphs.scrolled {
-  margin-bottom: 30px;
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 
 #about-section h1 {
@@ -240,9 +271,21 @@ body {
   margin-top: 0.8rem;
 }
 
+.our-believes {
+  margin-top: 5rem;
+}
+
 .believes {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+  transition: 1s all ease-in-out;
+}
+.believes.scrolled {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 .believe {
@@ -257,8 +300,12 @@ body {
 }
 
 .believe-cta-grp {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
+}
+.believe-cta-grp h2 {
+  margin-bottom: 1rem;
 }
 
 .believe-cta img {
@@ -412,10 +459,6 @@ body {
   margin-bottom: 0;
 }
 
-/* .contact-action img {
-  width: 200px;
-} */
-
 .contact-action-detail {
   margin-bottom: 3%;
 }
@@ -508,6 +551,12 @@ body {
     justify-content: space-between;
   }
 
+  .desktop-nav-donate {
+    border: 0.12rem solid #00a85a;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+  }
+
   nav .desktop-nav li {
     list-style: none;
     margin-left: 32px;
@@ -524,10 +573,14 @@ body {
   }
 
   .desktop-nav li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
+    /* font-size: 16px;
+    font-weight: 500; */
+  }
+
+  #hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .hero-intro {
@@ -541,17 +594,22 @@ body {
     text-align: center;
   }
 
+  #hero-section h2 {
+    margin: 2rem auto;
+    font-family: 'Crete Round', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 50rem;
+    padding: 1rem 2rem;
+  }
+
   .hero-section-paragraph {
     animation-delay: 1s;
     margin: 0 auto 2rem auto;
     text-align: center;
     font-size: 26px;
     color: #fff;
-  }
-
-  .btn-cta {
-    animation-delay: 2s;
-    margin: 0 auto;
   }
 
   .hero-section-icons {
@@ -717,7 +775,7 @@ body {
     width: 100%;
     height: 30%;
   }
-  
+
   .contact-action-detail {
     font-size: 20px;
     width: 80%;

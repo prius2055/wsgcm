@@ -23,7 +23,6 @@ const projects = [
 
 const projectCards = document.querySelector('.message-cards');
 
-
 projects.forEach((project, i) => {
   const div = document.createElement('div');
   div.className = 'message-card';
@@ -40,9 +39,9 @@ const messageCards = document.querySelectorAll('.message-card');
 const messageImages = document.querySelectorAll('.message-img');
 const messageNotes = document.querySelectorAll('.message-notes');
 
-const aboutParagraphs = document.querySelector('.about-paragraphs');
+const believes = document.querySelector('.believes');
 
-const techSkills = document.querySelectorAll('.tech-skills');
+console.log(believes);
 
 const objectInView = (card, percentageScroll = 100) => {
   const cardTop = card.getBoundingClientRect().top;
@@ -85,26 +84,16 @@ const handleScrollAnimation = () => {
     }
   });
 
-  if (objectInView(aboutParagraphs, 65)) {
-    aboutParagraphs.classList.add('scrolled');
-  } else if (objectOutOfView(aboutParagraphs)) {
-    aboutParagraphs.classList.remove('scrolled');
+  if (objectInView(believes, 65)) {
+    believes.classList.add('scrolled');
+  } else if (objectOutOfView(believes)) {
+    believes.classList.remove('scrolled');
   }
-
-  techSkills.forEach((skill) => {
-    if (objectInView(skill, 65)) {
-      skill.classList.add('scrolled');
-    } else if (objectOutOfView(skill)) {
-      skill.classList.remove('scrolled');
-    }
-  });
 };
 
 window.addEventListener('scroll', () => {
   handleScrollAnimation();
 });
-
-
 
 const header = document.querySelector('.header');
 const navBar = document.querySelector('.navBar');
