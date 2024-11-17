@@ -44,7 +44,7 @@ projects.forEach((project, i) => {
   const div = document.createElement('div');
   div.className = 'message-card';
   div.innerHTML = `  <video controls preload="metadata" loading="lazy" poster=${project.image}>
-  <source src='${project.videoMp4}' type="video/mp4">
+  <source src='${project.videoWebm}' type="video/mp4">
 
   Your browser does not support the video tag.
 </video>
