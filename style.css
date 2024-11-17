@@ -26,7 +26,7 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1% 10%;
+  padding: 2% 5%;
   align-items: center;
   position: fixed;
   top: 0;
@@ -36,10 +36,13 @@ body {
 
 .header.active {
   flex-direction: column;
+  padding: 0;
+  background-color: rgba(34, 34, 34);
 }
 
 .navBar.active {
   width: 100%;
+  /* height: 100vh; */
 }
 
 .header a {
@@ -59,46 +62,61 @@ body {
 }
 
 .logo img {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   margin-right: 0.5rem;
 }
 
+.logo span {
+  font-size: 0.5rem;
+}
+
+nav {
+  height: 2rem;
+  width: 2rem;
+}
+
 .hamburger {
+  width: 100%;
+  height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
 }
 
-.hamburger img {
-  height: 6px;
-  width: 24px;
+.hamburger svg {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hero-section-icons img {
   margin-right: 21px;
 }
 
-.hamburger.active img:nth-child(1) {
-  transform: translateY(3px) rotate(45deg);
+.hamburger.active svg:nth-child(1) {
+  transform: rotate(45deg);
   align-self: flex-end;
   display: block;
   text-align: end;
   position: absolute;
-  top: 2.4%;
-  right: 10%;
+  top: 25%;
+  right: 4%;
+  height: 2rem;
+  width: 2rem;
 }
 
-.hamburger.active img:nth-child(2) {
+.hamburger.active svg:nth-child(2) {
   display: none;
 }
 
-.hamburger.active img:nth-child(3) {
-  transform: translateY(-3px) rotate(-45deg);
+.hamburger.active svg:nth-child(3) {
+  transform: rotate(-45deg);
   position: absolute;
-  top: 3%;
-  right: 10%;
+  top: 25%;
+  right: 4%;
+  height: 2rem;
+  width: 2rem;
 }
 
 .desktop-nav {
@@ -159,19 +177,21 @@ body {
 
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: center;
-  padding: 4% 10% 1% 10%;
+  /* padding: 4% 10% 1% 10%; */
+  padding: 20% 5% 0% 5%;
   height: 100vh;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: #ffffffcc;
   text-align: center;
 }
 
 .hero-mandate {
-  width: 50%;
+  /* width: 50%; */
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
@@ -180,9 +200,11 @@ body {
 }
 
 .hero-image {
-  width: 50%;
-  height: 600px;
-  border-radius: 1rem;
+  /* width: 50%; */
+  width: 112%;
+  height: 300px;
+  /* height: 600px; */
+  /* border-radius: 1rem; */
   animation: slideIn 1.5s steps(30, end) 1s 1 normal both;
   animation-delay: 1s;
 }
@@ -230,23 +252,28 @@ body {
   border-left: 6px solid rgba(255, 255, 255, 0.5);
   padding-left: 0.8rem;
   text-align: left;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 1rem;
 }
 
 .hero-passage p:last-child {
   text-align: right;
   margin-right: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  /* margin-top: 1rem; */
   font-style: italic;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: 0.5rem;
 }
 
 .hero-task {
   text-align: left;
   border-left: 6px solid rgba(255, 255, 255, 0.5);
   padding-left: 0.8rem;
-  margin-top: 2rem;
-  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  /* margin-top: 2rem; */
+  /* font-size: 1.2rem; */
+  font-size: 1rem;
 }
 
 /* ABOUT SECTION */
@@ -326,10 +353,6 @@ body {
   margin-top: 80px;
 }
 
-#message-section h2 {
-  margin-bottom: 2rem;
-}
-
 .message-cards {
   display: flex;
   flex-direction: column;
@@ -354,10 +377,9 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.message-card img {
+.message-card video {
   width: 100%;
   height: 400px;
-  border-radius: 1rem;
 }
 
 .verses {
