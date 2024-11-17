@@ -3,25 +3,28 @@ const projects = [
     id: 1,
     name: 'Beware of Religious Spirit',
     image: 'img/message-1.jpg',
-    liveDemo: 'https://www.youtube.com/live/ITKM9wSZr4Q',
+    videoMp4: 'videos/Beware of Religious spirits.mp4',
+    videoWebm: 'videos/Beware of Religious spirits.webm',
   },
-
   {
-    id: 2,
-    name: "God's mercy shown through us",
+    id: 1,
+    name: "God's Mercy shown through us",
     image: 'img/message-2.jpg',
-    liveDemo: 'https://www.youtube.com/live/Iu107V6q87k',
+    videoMp4: 'videos/Gods Mercy Shown Through Us.mp4',
+    videoWebm: 'videos/Gods Mercy Shown Through Us.webm',
   },
-
   {
-    id: 3,
-    name: 'How To Unlock Yor Season',
+    id: 1,
+    name: 'How to unlock your season',
     image: 'img/message-3.jpg',
-    liveDemo: 'https://www.youtube.com/live/07QQas2ERgw',
+    videoMp4: 'videos/How To Unlock your Season.mp4',
+    videoWebm: 'videos/How To Unlock your Season.webm',
   },
 ];
 
 const projectCards = document.querySelector('.message-cards');
+
+/* 
 
 projects.forEach((project, i) => {
   const div = document.createElement('div');
@@ -33,6 +36,32 @@ projects.forEach((project, i) => {
           `;
   projectCards.appendChild(div);
 });
+
+
+*/
+
+projects.forEach((project, i) => {
+  const div = document.createElement('div');
+  div.className = 'message-card';
+  div.innerHTML = `  <video controls preload="metadata" loading="lazy" poster=${project.image}>
+  <source src='${project.videoMp4}' type="video/mp4">
+
+  Your browser does not support the video tag.
+</video>
+<p>${project.name}</p>
+          `;
+  projectCards.appendChild(div);
+});
+
+/*
+
+<video width="640" height="360" controls preload="metadata">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+*/
 
 //Handle scroll animation
 const messageCards = document.querySelectorAll('.message-card');
@@ -95,15 +124,16 @@ window.addEventListener('scroll', () => {
   handleScrollAnimation();
 });
 
+const hamburger = document.querySelector('.hamburger');
 const header = document.querySelector('.header');
 const navBar = document.querySelector('.navBar');
 const mobileNav = document.querySelector('.mobile-nav');
-const hamburger = document.querySelector('.hamburger');
 const mobileNavLogo = document.querySelector('.logo');
 const mobileNavLink = document.querySelectorAll('.nav-link');
 const mainContainer = document.querySelector('.main-container');
 const bottomLine = document.querySelector('.bottom_line');
 
+//Handle hamburger click
 hamburger.addEventListener('click', () => {
   header.classList.toggle('active');
   navBar.classList.toggle('active');
