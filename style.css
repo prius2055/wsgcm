@@ -643,30 +643,24 @@ nav {
     width: 20px;
   }
 
-  .desktop-nav li a {
-    /* font-size: 16px;
-    font-weight: 500; */
-  }
-
   #hero-section {
-    padding: 4% 10% 1% 10%;
+    padding: 10% 10% 1% 10%;
     margin-top: 0;
-  }
-
-  .hero-mandate {
-    width: 50%;
   }
 
   .hero-mandate h1 {
     margin-bottom: 1rem;
+    font-family: 'Crete Round', sans-serif;
+    font-size: 3rem;
+  }
+  .hero-mandate {
+    width: 50%;
   }
 
   .hero-image {
     width: 50%;
-  }
-
-  .btn-cta {
-    font-weight: 700;
+    height: 500px;
+    border-radius: 1rem;
   }
 
   .hero-section-icons li {
@@ -679,33 +673,21 @@ nav {
     justify-content: space-between;
   }
 
-  .hero-intro {
-    width: 100%;
+  .hero-passage p:first-child {
+    font-size: 16px;
   }
 
-  #hero-section h1 {
-    margin: 2rem auto;
-    font-family: 'Crete Round', sans-serif;
-    font-size: 3rem;
-    text-align: center;
+  .hero-passage p:last-child {
+    font-size: 12px;
   }
 
-  #hero-section h2 {
-    margin: 2rem auto;
-    font-family: 'Crete Round', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    border: 1px solid #fff;
-    width: 50rem;
-    padding: 1rem 2rem;
+  .hero-task {
+    font-size: 16px;
   }
 
-  .hero-section-paragraph {
-    animation-delay: 1s;
-    margin: 0 auto 2rem auto;
-    text-align: center;
-    font-size: 26px;
-    color: #fff;
+  .btn-cta {
+    font-size: 20px;
+    margin-top: 3.5rem;
   }
 
   .hero-section-icons {
@@ -717,14 +699,6 @@ nav {
     left: 0%;
     background-color: rgba(0, 0, 0, 0.85);
     padding: 1%;
-  }
-
-  .hero-section-icons img {
-    margin-right: 0;
-  }
-
-  .hero-section-icons img:hover {
-    transform: scaleX(1.5);
   }
 
   /* ABOUT SECTION */
@@ -887,6 +861,22 @@ nav {
 @media screen and (min-width: 1200px) {
   #hero-section h1 {
     font-size: 5rem;
+  }
+
+  .hero-passage p:first-child {
+    font-size: 22px;
+  }
+
+  .hero-passage p:last-child {
+    font-size: 14px;
+  }
+
+  .hero-task {
+    font-size: 22px;
+  }
+
+  .btn-cta {
+    font-size: 20px;
   }
 
   .believe p {
