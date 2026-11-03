@@ -1,0 +1,4 @@
+.prayer{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.prayer__aside{background:var(--mint);border-left:6px solid var(--gold);padding:1.6rem;border-radius:6px;display:grid;gap:.9rem;font-size:.98rem}
+.prayer__aside h3{font-size:1.3rem;color:var(--forest)}
+@media (max-width:860px){.prayer{grid-template-columns:1fr}}

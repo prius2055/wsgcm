@@ -1,0 +1,10 @@
+.dform{display:grid;gap:1.2rem;max-width:640px}
+.dform__field{display:grid;gap:.4rem;font-weight:600}
+.dform__field em{font-weight:400;color:var(--muted);font-style:normal}
+.dform input:not([type=checkbox]),.dform select,.dform textarea{font:400 1rem var(--sans);padding:.8rem 1rem;border:1.5px solid #9fb9ac;border-radius:10px;background:#fff;color:var(--ink)}
+.dform input:focus,.dform select:focus,.dform textarea:focus{border-color:var(--emerald-d);outline:3px solid rgba(20,160,111,.25)}
+.dform__check{display:flex;gap:.7rem;align-items:flex-start;font-size:.98rem}
+.dform__check input{width:1.2rem;height:1.2rem;margin-top:.25rem;accent-color:var(--emerald-d)}
+.dform__note{font-size:.92rem;color:var(--muted);border-left:4px solid var(--gold);padding-left:1rem}
+.dform .btn{justify-self:start}
+.dform__done{max-width:640px;padding:1.6rem;background:var(--mint);border-left:6px solid var(--emerald);border-radius:6px;font-size:1.1rem}

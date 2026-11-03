@@ -1,0 +1,6 @@
+.mcard{display:flex;flex-direction:column;gap:.4rem}
+.mcard .imgph{margin-bottom:.6rem}
+.mcard__cat{font-size:.9rem;font-weight:600;color:var(--emerald-d)}
+.mcard__title{font-size:1.4rem;color:var(--forest)}
+.mcard__meta{color:var(--muted);font-size:.96rem;margin-bottom:.6rem}
+.mcard .btn{align-self:flex-start}

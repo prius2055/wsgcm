@@ -1,0 +1,4 @@
+.give__buttons{display:flex;gap:.8rem;flex-wrap:wrap}
+.give__hint{margin-top:1rem;font-size:.95rem;color:var(--muted)}
+.give__bank{margin-top:1.8rem;max-width:560px;display:grid;grid-template-columns:auto 1fr;gap:.7rem 1.5rem;padding:1.5rem;background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--emerald);border-radius:6px}
+.give__bank dt{font-weight:600;color:var(--emerald-d)}

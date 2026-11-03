@@ -1,0 +1,6 @@
+.imgph{position:relative;width:100%;display:flex;align-items:flex-end;padding:1rem;color:#fff;background:linear-gradient(160deg,var(--emerald) 0%,var(--forest) 100%);overflow:hidden}
+.imgph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 14px,transparent 14px 28px)}
+.imgph__label{position:relative;font-size:.9rem;font-weight:500;background:rgba(14,59,44,.7);padding:.25rem .7rem;border-radius:999px}
+.imgph--wide{aspect-ratio:16/9;border-radius:14px}
+.imgph--square{aspect-ratio:1;border-radius:14px}
+.imgph--arch{aspect-ratio:4/5;border-radius:999px 999px 14px 14px;align-items:flex-end;justify-content:center;padding-bottom:1.5rem}

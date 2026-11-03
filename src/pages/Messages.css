@@ -1,0 +1,10 @@
+.msgs__feature{display:grid;grid-template-columns:1.5fr 1fr;gap:2.5rem;align-items:center}
+.msgs__feature dl{display:grid;gap:.2rem}
+.msgs__feature dt{font-weight:600;color:var(--emerald-d);font-size:.92rem;margin-top:.8rem}
+.msgs__feature dd{font:500 1.2rem var(--serif)}
+.msgs__filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.msgs__chip{font:600 .95rem var(--sans);padding:.55rem 1.1rem;border-radius:999px;border:1.5px solid var(--emerald-d);background:transparent;color:var(--forest);cursor:pointer;transition:background .2s,color .2s}
+.msgs__chip:hover{background:#fff}
+.msgs__chip.is-on{background:var(--emerald-d);color:#fff}
+.msgs__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:2.2rem}
+@media (max-width:860px){.msgs__feature{grid-template-columns:1fr}}

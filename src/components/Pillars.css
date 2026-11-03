@@ -1,0 +1,8 @@
+.pillars{background:var(--mint);padding:clamp(3.5rem,8vw,6rem) 1.25rem}
+.pillars__in{max-width:1080px;margin:0 auto}
+.pillars__title{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--forest);margin-bottom:2.2rem}
+.pillars__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;margin-bottom:2.5rem}
+.pillars__item{border-top:5px solid var(--emerald);padding-top:1.2rem}
+.pillars__item h3{font-size:1.5rem;color:var(--forest);margin-bottom:.6rem}
+.pillars__item p{color:var(--muted)}
+@media (max-width:860px){.pillars__grid{grid-template-columns:1fr;gap:2rem}}

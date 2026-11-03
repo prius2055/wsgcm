@@ -1,0 +1,7 @@
+.latest{padding:clamp(3.5rem,8vw,6rem) 1.25rem}
+.latest__in{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.latest__title{font-size:clamp(1.9rem,4vw,2.6rem);color:var(--forest);margin-bottom:1.2rem}
+.latest__meta{margin-bottom:1.8rem;display:grid;gap:.7rem}
+.latest__meta div{display:flex;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.6rem}
+.latest__meta dt{width:7.5rem;font-weight:600;color:var(--emerald-d);flex-shrink:0}
+@media (max-width:860px){.latest__in{grid-template-columns:1fr}}

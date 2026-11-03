@@ -1,0 +1,12 @@
+.salv__lead{margin-bottom:2rem;font-size:1.15rem}
+.salv__verses{display:grid;gap:2.2rem}
+.salv__verse{padding-left:1.5rem;border-left:5px solid var(--emerald)}
+.salv__verse h3{font-size:1.5rem;color:var(--forest)}
+.salv__ref{font-weight:600;color:var(--emerald-d);margin:.2rem 0 .6rem}
+.salv__verse blockquote{font:500 1.3rem/1.4 var(--serif);margin-bottom:.6rem}
+.salv__verse p:last-child{color:var(--muted)}
+.salv__prayer{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:clamp(1.4rem,4vw,2.4rem)}
+.salv__prayer h3{color:var(--gold);font-size:1.3rem;margin-bottom:.8rem}
+.salv__prayer p{font:italic 500 1.3rem/1.55 var(--serif)}
+.salv__actions{display:flex;gap:.8rem;flex-wrap:wrap}
+.salv__form{margin-top:2.2rem}

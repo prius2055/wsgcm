@@ -1,0 +1,9 @@
+:root{--forest:#0E3B2C;--emerald:#14A06F;--emerald-d:#0B7A54;--mint:#EAF5EF;--paper:#FAFCFB;--ink:#14261F;--muted:#4D6359;--gold:#D9A93B;--line:#D3E4DA;--serif:'Newsreader',Georgia,serif;--sans:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:1.0625rem/1.65 var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;font-weight:600;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

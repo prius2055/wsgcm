@@ -1,0 +1,8 @@
+.sec{padding:clamp(3.5rem,8vw,6.5rem) 1.25rem}
+.sec--mint{background:var(--mint)}
+.sec--forest{background:var(--forest);color:#fff}
+.sec__in{max-width:1080px;margin:0 auto}
+.sec__in--narrow{max-width:760px}
+.sec__title{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1rem;max-width:22ch;text-wrap:balance}
+.sec__intro{max-width:62ch;color:var(--muted);margin-bottom:2.2rem}
+.sec--forest .sec__intro{color:#cfe3d9}

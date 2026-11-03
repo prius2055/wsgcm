@@ -1,0 +1,9 @@
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.5rem;border-radius:999px;font:600 1rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn--primary{background:var(--emerald-d);color:#fff}
+.btn--primary:hover{background:var(--forest)}
+.btn--gold{background:var(--gold);color:var(--forest)}
+.btn--gold:hover{background:#fff}
+.btn--ghost{border-color:currentColor;color:var(--forest);background:transparent}
+.btn--ghost:hover{background:var(--forest);border-color:var(--forest);color:#fff}
+.btn--light{border-color:#fff;color:#fff;background:transparent}
+.btn--light:hover{background:#fff;color:var(--forest)}
