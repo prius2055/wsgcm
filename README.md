@@ -1,1 +1,0 @@
-# wsgcm - Spreading the goodnews
