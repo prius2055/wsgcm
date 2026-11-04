@@ -6,3 +6,5 @@
 .visit__info dt{font-weight:600;color:var(--emerald-d)}
 .visit__actions{display:flex;gap:.8rem;flex-wrap:wrap}
 @media (max-width:860px){.visit__in{grid-template-columns:1fr}}
+.visit{background:linear-gradient(90deg,rgba(237,242,236,.94),rgba(237,242,236,.82)),url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1800&q=85') center/cover}
+.visit .imgph--wide{background-image:url('https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1400&q=85');background-position:center;background-size:cover;border:0;box-shadow:var(--shadow)}

@@ -5,3 +5,4 @@
 .latest__meta div{display:flex;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.6rem}
 .latest__meta dt{width:7.5rem;font-weight:600;color:var(--emerald-d);flex-shrink:0}
 @media (max-width:860px){.latest__in{grid-template-columns:1fr}}
+.latest{background:linear-gradient(90deg,rgba(251,250,247,.95),rgba(251,250,247,.84)),url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1800&q=85') center/cover}

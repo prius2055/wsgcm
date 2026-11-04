@@ -7,3 +7,15 @@
 .hero__actions{margin-top:2rem;display:flex;gap:.8rem;flex-wrap:wrap}
 .hero__media{max-width:420px;justify-self:end;width:100%}
 @media (max-width:860px){.hero__in{grid-template-columns:1fr}.hero__media{justify-self:start;max-width:320px;order:-1}}
+.hero.hero--image{min-height:min(760px,82vh);display:flex;align-items:center;padding:clamp(5rem,10vw,8.5rem) 1.5rem;background:linear-gradient(90deg,rgba(7,24,18,.88) 0%,rgba(7,24,18,.72) 43%,rgba(7,24,18,.12) 100%),url('/images/hero-worship.webp') center 42%/cover no-repeat;color:white}
+.hero--image .hero__in{width:100%;grid-template-columns:1fr;max-width:var(--content)}
+.hero--image .hero__copy{max-width:760px}
+.hero--image .hero__name{color:#e2c486;letter-spacing:.2em}
+.hero--image .hero__title{color:#fff;font-size:clamp(3.2rem,7vw,6.1rem);text-shadow:0 3px 28px rgba(0,0,0,.2)}
+.hero--image .hero__title span:nth-child(2){color:#e5c98f}
+.hero--image .hero__text{color:rgba(255,255,255,.9);max-width:58ch}
+.hero--image .hero__actions{gap:.9rem}
+.hero--image .hero__scroll{position:absolute;right:clamp(1.5rem,6vw,6rem);bottom:2rem;color:rgba(255,255,255,.8);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+.hero--image .hero__scroll span{color:#e5c98f;font-size:1.2rem;margin-left:.6rem}
+@media(max-width:760px){.hero.hero--image{min-height:680px;background-position:58% center;padding:5rem 1.2rem}.hero--image .hero__title{font-size:clamp(2.8rem,12vw,4.5rem)}.hero--image .hero__scroll{display:none}}
+.hero--image{position:relative;isolation:isolate}
